@@ -1,0 +1,438 @@
+* {
+    box-sizing: border-box;
+  }
+  
+body{
+    margin: 0;
+    background-color:rgb(29, 28, 28);
+    
+}
+
+
+.topBar{
+    
+    background-color: rgba(28,27,27,0.5);
+    width:100%;
+    height:3em;
+    position:fixed;
+    top: 0;
+    text-align: center;
+    z-index: 998;
+}
+
+.nameLogo{
+    display: block;
+    font-size: 1.3em;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    letter-spacing:0.2em;
+    text-decoration: none;
+    padding-top: 4px;
+    padding-bottom: 7px;
+    margin:0 auto;
+}
+
+.nameLogo::first-letter{
+    color: goldenrod;
+    font-weight: bold;
+    font-size:1.55em
+}
+
+
+.swiper{
+    height: 650px;
+}
+
+.swiper-slide{
+    font-size: 2em;
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    background-position:center;
+}
+
+.swiper-content{
+    color:white;
+    padding-left: 5%;
+    padding-right: 4%;
+}
+
+
+
+nav{    
+    
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color:black;
+    margin: 0;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0px;
+    z-index: 999;
+   
+
+      
+}
+
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    
+}
+
+nav li{
+    float: left;
+}
+
+nav>ul>li a {
+    box-sizing: border-box;
+    display: block;
+    padding: .9em 1.2em .9em 1.2em;
+    text-decoration: none;
+    font-size: 1.2em;    
+    color:white;
+    
+}
+
+.active{
+    background-color:rgb(53, 211, 87);    
+}
+
+nav>ul>li:hover:not(.active){
+    
+    background-color:rgb(212, 93, 93);
+    color:black;
+    font-weight: bold;
+}
+
+.introduction{
+    background-color:rgb(192, 223, 235);
+    margin: 0;
+}
+
+.upper-colm{
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.left-col{
+    margin-top: 2.5em;
+    padding-top: 2.5em;
+    margin-left: 4em;
+    width: 20em;
+}
+
+.right-col{
+    margin-top: 3em;
+    margin-bottom: 2em;
+    width: 65%;
+
+}
+
+.right-col h1{
+    
+    font-size: 2.5em;
+}
+.right-col p{
+    font-size:1.5em;
+}
+
+.View-CV{
+    display: block;
+    background-color: antiquewhite;
+    font-size: 1.5em;
+    width:7em;
+    height: 2em;
+    padding: .35em 0;
+    border-radius: 2em;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.View-CV:hover{
+    background-color: rgb(96, 96, 218);
+    color: white;
+}
+
+.left-col img{
+    width: 16em;
+    border-radius:2em;
+    transition: all .5s;
+    z-index: 1;
+}
+
+.left-col img:hover{
+    box-shadow: 0 0.5em 0.5em 0.4em #3c369280;
+    transform:translateY(-0.25em);
+}
+
+.objective{
+    display: block;
+    margin-left:auto;
+    margin-right: auto;
+    width:70%;
+    text-align: center;
+    font-size:1.4em;
+    padding-bottom: 3em;
+    
+}
+
+.content{
+    margin:0;
+    width: 100%;
+    padding:2em 0 10em 0;
+    background-color: rgb(255, 245, 191);
+}
+
+.pricing-cards{
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top:2.5em;
+    
+}
+
+
+.price-table{
+    font-size:1.2em;
+    margin-top:1em;
+    margin-bottom:2em;
+    margin-right: 2em;
+    padding-right: 1em;
+    padding-top: 3em;
+    padding-bottom:2em;
+    width: 20em;
+    overflow: auto;
+    list-style-type: none;
+    transition: background-color .3s ease-in-out;
+    
+}
+
+.price-table .Order-now{
+    display: block;
+    background-color: antiquewhite;
+    font-size: 1.2em;
+    width:7em;
+    padding: .45em 0;
+    margin-top:1.5em;
+    border-radius: 2em;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s;
+
+}
+
+
+.price-table .View-details{
+    display: block;
+    background-color: antiquewhite;
+    font-size: 1.2em;
+    width:7em;
+    padding: .45em 0;
+    margin-top:1em;
+    border-radius: 2em;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.price-table img{
+    width:50px;
+    border-radius:50%;
+    border:2px solid blue;
+    
+}
+
+.price-table:hover{
+    background-color:rgba(255,255,255,0.5);
+    border-radius: 4em;
+}
+
+.price-table .Order-now:hover{
+    background-color: rgb(96, 96, 218);
+    color: white;
+}
+
+.price-table .View-details:hover{
+    background-color: rgb(92, 100, 93);
+    color: white;
+}
+
+.behance{
+    background-color:rgb(205, 216, 226);
+    width:100%;
+    text-align: center;
+    padding-top:3em;
+    padding-bottom: 7em;
+
+}
+
+.behance h1{
+    font-size: 2.5em;
+}
+
+
+
+
+.behance .overlay img{
+     width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-top-left-radius: 2em;
+    border-top-right-radius: 2em;
+    overflow: auto;
+    
+}
+
+.behance-text{
+    background-color: rgb(53, 52, 51);
+    
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding:.9em 0em .9em 0em;
+    border-bottom-left-radius: 2em;
+    border-bottom-right-radius: 2em;
+    transition:background-color .5s ease-out;
+  
+    
+}
+.behance-text a{
+    text-decoration: none;
+    font-size: 1.3em;
+    color: aliceblue;
+}
+
+.behance-text:hover{
+    background-color: rgb(255, 147, 40);
+}
+ .C_intro_line{
+    color: azure;
+    margin-top:2em;
+    font-size:3em;
+    margin-left: 80px;
+}
+
+
+ .C-msg {
+     color: white;
+    font-size: 2em;
+    margin-left: 80px;
+    width:85%;
+    margin-bottom: 2.5em;
+}
+
+
+.Contact{
+    width:100%;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+
+.contact-left{
+    margin-right:2em;
+    width:30em;
+    
+}
+
+fieldset{
+    padding-top: 2em;
+    padding-bottom: 2em;
+    border-right: none;
+    border-bottom: none;
+    border-left: none;
+}
+
+legend{
+    padding-left: 1em;
+    padding-right: 1em;
+    font-size:2em;
+    color:white;
+}
+input{
+    display: block;
+    width:25em;
+    height: 2.5em;
+    border-radius: 1.2em;
+    padding: 1.5em 1.5em;
+    margin-bottom:1.1em ;
+    transition:all .3s;
+    font-size:1.2em
+}
+
+textarea{
+    width:25em;
+    border-radius: 2em;
+    padding: 1.3em;
+    transition:all .3s;
+}
+
+textarea:hover{
+    transform: scale(1.05);
+}
+
+input[type="submit"]{
+    padding:.8em 1em .8em 1em;
+    width:10em;
+    height:3em;
+    border-radius: 2em;
+    margin-top:2em;
+    border: none;
+    background-color:rgb(36, 52, 194);
+    color: white;
+    font-weight:bold;
+    font-size: 1em;
+}
+
+input:hover{
+    transform: scale(1.05);
+}
+
+.Contact-right{
+    margin-left:3em;
+}
+iframe {
+    width:27em;
+    border-radius: 2em;
+}
+
+
+
+Footer{
+    color: white !important;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+    padding-top: 2em;
+    padding-bottom: 3em;
+    padding-left:5em;
+    border-top: 2px solid blue;
+}
+
+.frEverything{
+    font-size:3.5em;
+}
+.my-email{
+    transition: transform 0.3s;
+    color: white !important;
+}
+
+.my-email:hover{
+    transform: scale(1.05);
+}
