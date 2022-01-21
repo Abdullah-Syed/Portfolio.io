@@ -149,7 +149,7 @@ nav>ul>li:hover:not(.active){
     display: block;
     background-color: antiquewhite;
     font-size: 1.5em;
-    width:7em;
+    width:6.5em;
     height: 2em;
     padding: .35em 0;
     border-radius: 2em;
@@ -326,7 +326,7 @@ nav>ul>li:hover:not(.active){
 
 
  .C-msg {
-     color: white;
+    color: white;
     font-size: 2em;
     margin-left: 80px;
     width:85%;
@@ -414,11 +414,7 @@ iframe {
 
 
 Footer{
-    color: white !important;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    
+    color: white !important;   
     padding-top: 2em;
     padding-bottom: 3em;
     padding-left:5em;
@@ -435,4 +431,79 @@ Footer{
 
 .my-email:hover{
     transform: scale(1.05);
+}
+
+
+@media screen and (max-width: 500px){
+    
+    .swiper-slide{
+        font-size: 1.6em;
+    }
+
+        .left-col img{
+        width: 90%;
+        margin-right:10%;    
+    }
+    .nameLogo{
+        width: 100%;
+    }
+    .C_intro_line{
+        font-size:1.8em;
+        text-align:center;
+        width:90%;
+        margin-left: 5%;
+        margin-right:5%;
+    }
+    .C-msg{
+        color: white;
+        font-size: 1.5em;
+        width:85%;
+        margin-left: 7.5%;
+        margin-right:7.5%;
+        margin-bottom: 2.5em;
+    }
+    .contact-left{
+        margin-right:2.5%;
+        margin-left:2.5%;
+        width:90%;
+        
+    }
+    legend{
+        padding-left: 2.5%;
+        padding-right: 2.5%;
+        font-size:1.6em;
+        color:white;
+    }
+    input{
+        width:100%;
+    }
+    textarea{
+        width:100%;
+    }
+    .Contact-right{
+        margin-left:2.5%;
+        margin-left: 2.5%;
+    }
+    iframe {
+        width:100%;
+        border-radius: 2em;
+    }
+
+    Footer{
+        border-top: 2px solid blue;
+        width:90%;
+        color: white !important;
+        padding-left:2.5%;
+        padding-top: 2em;
+        padding-bottom: 2em;
+    }
+    
+    .frEverything{
+        font-size:1.8em;
+        text-align:center;
+    }
+
+    .my-email{
+        font-size:1em;
+    }
 }
