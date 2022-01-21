@@ -449,18 +449,10 @@ Footer{
     }
 
     .price-table{
-        font-size:1.1em;
-        margin-top:1em;
-        margin-bottom:5%;
-        margin-left:auto;
-        margin-right:auto;
-        padding-top: 3em;
-        padding-bottom:2em;
-        width: 90%;
-        overflow: auto;
-        list-style-type: none;
-        background-color:rgba(255,255,255,0.5);
+        background-color:rgba(253, 218, 104, 0.5);
         border-radius: 4em;
+        margin-left: auto;
+        margin-right: auto;
         
     }
 
