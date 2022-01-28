@@ -10,6 +10,7 @@
     rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     <title> Abdullah Syed ( Portfolio )</title>
     <link rel="icon" href="../Images/Abdullah-Syed Blue images.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -59,9 +60,10 @@
   </div>
 
 </header>
-
+    <img src="/mobile nav img/menu.svg" alt="Open Navigation" class="open-nav"/>
     <nav>
-        <ul class="navBar">
+        <img src="/mobile nav img/exit.svg" class="exit-button" alt="Exit"/>
+        <ul class="navBar" id="myTopNavigation">
             <li class="active"> <a href="#"> Home </a> </li>
             <li> <a href="#"> About me </a> </li>
             <li> <a href="#"> Skills </a> </li>
@@ -69,8 +71,13 @@
             <li> <a href="#"> Testimonial </a> </li>
             <li> <a href="#behance"> Behance portfolio </a> </li>
             <li> <a href="#contact"> Contact </a> </li>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+              </a>
         </ul>
     </nav>
+
+
 
     <div class="introduction">
         <div class="upper-colm">
@@ -86,7 +93,7 @@
                     through my gained skills. I Know how to deal with critical situation and able to adopt any IT &
                     Business-related process or system in a very short time.
                 </p>
-                <a href="CV/Abdullah Syed (CV).pdf" class="View-CV"> view CV</a>
+                <a href="CV/Abdullah Syed CV-1.pdf" class="View-CV"> view CV</a>
             </div>
         </div>
 
@@ -255,6 +262,7 @@
           },
         });
       </script>
+
 </body>
 
 </html>

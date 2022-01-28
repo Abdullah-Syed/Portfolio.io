@@ -44,7 +44,7 @@ body{
 }
 
 .swiper-slide{
-    font-size: 2em;
+    font-size: 1.8em;
     display: flex;
     align-items: center;
     background-size: cover;
@@ -53,14 +53,18 @@ body{
 
 .swiper-content{
     color:white;
-    padding-left: 5%;
+    padding-left: 7%;
     padding-right: 4%;
 }
 
-
+.open-nav{
+    display:none;
+}
+.exit-button{
+    display:none;
+}
 
 nav{    
-    
     display:flex;
     flex-direction:row;
     justify-content: center;
@@ -70,10 +74,7 @@ nav{
     position: -webkit-sticky; /* Safari */
     position: sticky;
     top: 0px;
-    z-index: 999;
-   
-
-      
+    z-index: 999;  
 }
 
 nav ul{
@@ -108,6 +109,9 @@ nav>ul>li:hover:not(.active){
     color:black;
     font-weight: bold;
 }
+.navBar .icon {
+    display: none;
+  }
 
 .introduction{
     background-color:rgb(192, 223, 235);
@@ -243,11 +247,11 @@ nav>ul>li:hover:not(.active){
     border-radius: 2em;
     text-align: center;
     text-decoration: none;
-    transition: background-color 0.3s;
+    transition: linear-gradient 0.3s;
 }
 
 .price-table img{
-    width:50px;
+    width:70px;
     border-radius:50%;
     border:2px solid blue;
     
@@ -264,7 +268,7 @@ nav>ul>li:hover:not(.active){
 }
 
 .price-table .View-details:hover{
-    background-color: rgb(92, 100, 93);
+    background-image: linear-gradient(to right, #77A1D3 0%, #79CBCA  51%, #77A1D3  100%);
     color: white;
 }
 
@@ -384,6 +388,9 @@ textarea{
 
 textarea:hover{
     transform: scale(1.05);
+    background-color: #85FFBD;
+background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+
 }
 
 input[type="submit"]{
@@ -399,7 +406,12 @@ input[type="submit"]{
     font-size: 1em;
 }
 
-input:hover{
+input:hover:not([type="submit"]){
+    transform: scale(1.05);
+    background-color: #85FFBD;
+    background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+}
+input[type="submit"]:hover{
     transform: scale(1.05);
 }
 
@@ -434,10 +446,10 @@ Footer{
 }
 
 
-@media screen and (max-width: 500px){
-    
+@media screen and (max-width: 550px){
+
     .swiper-slide{
-        font-size: 1.6em;
+        font-size: 1.5em;
     }
 
         .left-col img{
@@ -448,13 +460,42 @@ Footer{
         width: 100%;
     }
 
+    nav li{
+        display: none;
+    }
+
+
+
+
+    
+   /** nav ul{
+        list-style-type: none;
+        width:85%;
+        margin: 0 auto;
+        padding: 0;
+        overflow: hidden;
+     
+        
+    }
+**/
+    .introduction{
+        background-color: #000000;
+        background-image: linear-gradient(147deg, #000000 0%, #2c3e50 74%);
+        margin: 0;
+        color: white;
+    }
+
+    .content{
+        background: rgb(14,14,136);
+        background: linear-gradient(90deg, rgba(14,14,136,1) 24%, rgba(0,212,255,1) 100%);
+    }
     .price-table{
-        background-color:rgba(253, 218, 104, 0.5);
+        background-color:rgba(255,255,255,0.5);
         border-radius: 4em;
         margin-left: auto;
         margin-right: auto;
-        
     }
+  
 
     .C_intro_line{
         font-size:1.8em;
@@ -502,10 +543,13 @@ Footer{
     }
 
     Footer{
+        background-image: url(background/90630-[Converted].gif);
+        ;background-size: cover;
         border-top: 2px solid blue;
-        width:90%;
+        width:100%;
         color: white !important;
         padding-left:2.5%;
+        margin-top: 1.5em;
         padding-top: 2em;
         padding-bottom: 2em;
     }
@@ -517,5 +561,11 @@ Footer{
 
     .my-email{
         font-size:1em;
+        text-align: center;
     }
 }
+
+
+
+
+
